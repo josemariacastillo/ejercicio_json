@@ -9,4 +9,4 @@ with open("peliculas.json") as fichero:
 	doc=json.load(fichero)
 
 
-print len(doc["peliculas"]["pelicula"])
+print "Número de Peliculas: ",len(doc["peliculas"]["pelicula"])

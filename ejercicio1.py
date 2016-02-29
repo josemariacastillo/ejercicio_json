@@ -9,5 +9,5 @@ with open("peliculas.json") as fichero:
 	doc=json.load(fichero)
 
 for l in doc["peliculas"]["pelicula"]:
-	print l["titulo"]
-	print l["sinopsis"]
+	print "\nTitulo: ",l["titulo"]
+	print "Sinopsis: \n",l["sinopsis"]

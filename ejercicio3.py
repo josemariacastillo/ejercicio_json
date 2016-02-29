@@ -21,4 +21,7 @@ for p in doc["peliculas"]["pelicula"]:
 			encontrado=True
 		if encontrado==True:
 			contador=contador+1
-print contador
+if encontrado==True:
+	print "Peliculas hechas en ese país: ",contador
+else:
+	print "No existe la nacionalidad introducidad."

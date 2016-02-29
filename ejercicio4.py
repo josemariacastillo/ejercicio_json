@@ -10,7 +10,13 @@ with open("peliculas.json") as fichero:
 
 iden=int(raw_input("Introduzca el identificador de la pelicula: "))
 
+encontrado=False
+
 for p in doc["peliculas"]["pelicula"]:
 	if iden==p["identificador"]:
-		print p["titulo"]
-		print p["nacionalidad"]
+		print "Titulo: ",p["titulo"]
+		print "Nacionalidad: ",p["nacionalidad"]
+		encontrado=True
+
+if encontrado==False:
+	print "El identificador no existe."
